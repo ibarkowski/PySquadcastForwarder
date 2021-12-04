@@ -1,0 +1,2 @@
+# PySquadcastForwarder
+Simple webhook receiver
