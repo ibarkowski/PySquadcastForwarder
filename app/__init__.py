@@ -4,9 +4,10 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 app = Flask(__name__)
 
+
 gunicorn_logger = logging.getLogger('gunicorn.error')
 app.logger.handlers = gunicorn_logger.handlers
-app.logger.setLevel(logging.INFO)
+app.logger.setLevel(logging.DEBUG)
 
 
 def getMailsAndTransfer():
